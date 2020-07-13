@@ -1,5 +1,5 @@
 import sys
-import pip._vendor.requests
+
 import requests
 
 # print(sys.version)
