@@ -37,7 +37,9 @@ for (int i = 0; i < len; i++) {
 }
 '''
 
-nums = [1, 2, 3, 4, 4, 5, 3] #own input data
+nums = [1, 2, 3, 4, 4, 4, 5, 5, 5]  # own input data
+
+print(f" Before removing dups {nums} for solution 1")
 
 
 def remove_dup(nums) -> int:
@@ -51,3 +53,8 @@ def remove_dup(nums) -> int:
 
 
 print(remove_dup(nums))
+
+print(f" After removing dups {nums} for solution 1")
+
+# Solution 2: in place one liner , also this method works on unsorted array
+print(len(set(nums)))
